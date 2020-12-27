@@ -1,1 +1,1 @@
-bundle exec main.rb
+ruby main.rb
