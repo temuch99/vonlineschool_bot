@@ -10,7 +10,7 @@ Telegram::Bot::Client.run(token) do |bot|
 			case message.text
 			when '/start'
 				answer = "Привет, #{message.from.first_name}, я - бот, который даст тебе возможность попрактиковаться с тестовыми заданиями ЕГЭ. " +
-					 	 "Введи /get_question для того, чтобы получить задание"
+					 	 "Введи /get для того, чтобы получить задание"
 				bot.api.send_message(chat_id: message.chat.id, text: answer)
 			when '/stop'
 				bot.api.send_message(chat_id: message.chat.id, text: "Пока, #{message.from.first_name}, надесь еще увидимся")
