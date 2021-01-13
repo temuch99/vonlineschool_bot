@@ -15,8 +15,15 @@ GEM
       ruby2_keywords
     ice_nine (0.11.2)
     inflecto (0.0.2)
+    mini_portile2 (2.5.0)
     multipart-post (2.1.1)
+    nokogiri (1.11.1)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
+    open-uri (0.1.0)
+    racc (1.5.2)
     ruby2_keywords (0.0.2)
+    sqlite3 (1.4.2)
     telegram-bot-ruby (0.14.0)
       faraday
       inflecto
@@ -33,6 +40,9 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
+  nokogiri
+  open-uri
+  sqlite3
   telegram-bot-ruby
 
 RUBY VERSION
